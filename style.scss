@@ -91,7 +91,7 @@ body{
     .header_content{
       
       padding-top: 6.25rem; // 100px
-      margin: 1rem;
+      
       
       .content_body{
         margin: 0 auto;
@@ -152,55 +152,62 @@ body{
       }
     }
   }
+
+
+   .sub_header {
+    padding-top: 6.25rem;
+    background-color: rgb(198, 198, 198);
+    .sub_header_body{
+        
+      .sub_header_items{
+        padding-left: 20px;
+        padding-right: 20px;
+        display: grid;
+        grid-template-columns:  minmax(6.225rem,46.875rem) minmax(6.225rem,28.125rem); 
+        grid-template-rows: 1fr 1fr;
+        gap: 25px;
+        column-gap: 80px;
+        
+    
+        .sub_header_text_header{
+          
+          letter-spacing: 0.1px;
+          line-height: 30px;
+          .first_letter{
+            font-size: 40px;
+          }
+          span{
+            color: rgb(224, 79, 1);
+          }
+        }
+        
+        .item_img_text{
+         
+          display: flex;
+          line-height: 20px;
+            img{
+              max-height: 3.438rem;
+              width: 3.438rem;
+            }
+            .item_img_text_text{
+              padding-left: 30px;
+              letter-spacing: 0.3px;
+              span{font-size: 14px;opacity: 55%;}
+               p{
+                line-height: 20px;
+                font-weight: 700; 
+                padding-bottom: 5px;
+                
+               }
+            }
+        }
+
+      }
+    }
+   }
+
+
+
+
 }
 
-// Медиазапросы для адаптивности
-@media (max-width: 48em) { // 768px
-  // .header_items{
-  //   flex-direction: column;
-  // }
-  body {
-    font-size: 14px; // Уменьшаем базовый шрифт
-  }
-  
-  .wrapper .header .header_content {
-    padding-top: 3.125rem; // 50px
-  }
-  
-  .wrapper .header .header_content .content_body .content_title_nav .content_title {
-    font-size: 2.25rem; // 36px
-    line-height: 2.625rem; // 42px
-  }
-  
-  .wrapper .header .header_content .content_body .content_title_nav .content_nav {
-    padding-top: 3.125rem; // 50px
-  }
-
-}
-@media (max-width: 62.5em){
-  .wrapper .header .header_content .content_img {
-    img{
-      max-width: 30rem; // 550px
-    }
-    
-  }
-}
-@media (max-width: 30em) { // 480px
-  .wrapper .header .header_items {
-    flex-direction: column;
-    padding: 0.9375rem; // 15px
-    
-    .logo {
-      margin-bottom: 0.9375rem; // 15px
-    }
-  }
-  
-  .wrapper .header .header_content .content_body {
-    grid-template-columns: 1fr;
-  }
-  
-  .wrapper .header .header_content .content_img {
-    
-    margin-bottom: 1.25rem; // 20px
-  }
-}
