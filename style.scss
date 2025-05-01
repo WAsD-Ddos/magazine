@@ -89,6 +89,7 @@ body{
     }
 
     .header_content{
+
       
       padding-top: 6.25rem; // 100px
       
@@ -128,7 +129,7 @@ body{
                 &.nav_item_last::after {
                   display: none;
                 }
-            
+               
                 img {
                   width: 1.25rem; // 20px
                 }
@@ -160,17 +161,16 @@ body{
     .sub_header_body{
         
       .sub_header_items{
-        padding-left: 20px;
-        padding-right: 20px;
         display: grid;
-        grid-template-columns:  minmax(6.225rem,46.875rem) minmax(6.225rem,28.125rem); 
+        grid-template-columns:  1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr;
+       
         gap: 25px;
         column-gap: 80px;
         
-    
+
         .sub_header_text_header{
-          
+        grid-column: 1/span 2;
           letter-spacing: 0.1px;
           line-height: 30px;
           .first_letter{
@@ -182,7 +182,7 @@ body{
         }
         
         .item_img_text{
-         
+          grid-column-start: 3;
           display: flex;
           line-height: 20px;
             img{
@@ -192,7 +192,7 @@ body{
             .item_img_text_text{
               padding-left: 30px;
               letter-spacing: 0.3px;
-              span{font-size: 14px;opacity: 55%;}
+              span{font-size: 13px;opacity: 55%;}
                p{
                 line-height: 20px;
                 font-weight: 700; 
@@ -205,6 +205,78 @@ body{
       }
     }
    }
+
+  
+
+
+  .card_content{
+    padding-top:50px;
+    background-color: rgb(210, 210, 210);
+
+    .card_body{
+      
+      
+      .card_title{
+        padding-bottom: 20px;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+      .content_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(12.5rem,1fr));
+        
+        .card_item{
+           .card_img{
+            position: relative;
+            img{
+              width:17.5rem;
+            }
+            .card_title{
+              color: aliceblue;
+              font-size:17px;
+              padding-left: 20px;
+              position: absolute;
+              bottom: 0;
+              left :0;
+              &::after { 
+                content: " ";
+                background: #9a9898;
+                width: 15.5rem; // 326px
+                height: 2px;
+                opacity: 30%;
+                bottom: 3rem; // 28px
+                left: 10px;
+                right: 10px;
+                position: absolute;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
