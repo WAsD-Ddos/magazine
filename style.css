@@ -208,10 +208,19 @@ body {
   padding-left: 1.25rem;
 }
 .wrapper .header .header_content .content_img {
+  position: relative;
   margin: 0 auto;
 }
 .wrapper .header .header_content .content_img img {
   max-width: 34.375rem;
+}
+.wrapper .header .header_content .content_img .content_img_price {
+  position: absolute;
+  bottom: 13rem;
+  left: 7.5rem;
+}
+.wrapper .header .header_content .content_img .content_img_price img {
+  max-width: 11.5rem;
 }
 .wrapper .sub_header {
   padding-top: 6.25rem;
@@ -295,7 +304,7 @@ body {
   padding-top: 50px;
   background-color: rgb(210, 210, 210);
 }
-.wrapper .card_content .card_body .card_title {
+.wrapper .card_content .card_body .content_card_title {
   padding-bottom: 20px;
   font-size: 20px;
   letter-spacing: 0.5px;
@@ -304,6 +313,7 @@ body {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 10px;
 }
 .wrapper .card_content .card_body .content_items .card_item .card_img {
   position: relative;
@@ -318,6 +328,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  padding-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 .wrapper .card_content .card_body .content_items .card_item .card_img .card_title::after {
   content: " ";

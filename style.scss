@@ -144,11 +144,21 @@ body{
         }
       }
       .content_img{
+        position: relative;
            margin: 0 auto;
         img{
           
           max-width: 34.375rem; // 550px
           
+        }
+        .content_img_price{
+          position: absolute;
+         
+          bottom: 13rem;
+          left: 7.5rem;
+          img{
+            max-width: 11.5rem;
+          }
         }
       }
     }
@@ -216,15 +226,16 @@ body{
     .card_body{
       
       
-      .card_title{
+      .content_card_title{
         padding-bottom: 20px;
         font-size: 20px;
         letter-spacing: 0.5px;
+        
       }
       .content_items{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(12.5rem,1fr));
-        
+        gap: 10px;
         .card_item{
            .card_img{
             position: relative;
@@ -238,6 +249,8 @@ body{
               position: absolute;
               bottom: 0;
               left :0;
+              padding-bottom: 20px;
+              letter-spacing: 0.5px;
               &::after { 
                 content: " ";
                 background: #9a9898;
