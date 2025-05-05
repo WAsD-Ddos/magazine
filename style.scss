@@ -27,8 +27,9 @@ body{
 }
 
 .container{
-  max-width: 75rem; // 1200px
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .wrapper{ 
@@ -220,7 +221,7 @@ body{
 
 
   .card_content{
-    padding-top:50px;
+    padding:50px 0;
     background-color: rgb(210, 210, 210);
 
     .card_body{
@@ -269,23 +270,101 @@ body{
       }
     }
 
+}
 
 
 
 
 
+.product {
+  background-color: #262625;
+  padding: 4rem 0;
 
+  &_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 2rem;
 
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
 
+  &_body {
+    color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &_title {
+      font-size: clamp(2rem, 3vw, 2.5rem);
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 1rem;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background: #e86e39;
+      }
+    }
+
+    &_text {
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+      font-size: clamp(1rem, 1.2vw, 1.1rem);
+    }
+
+    &_nav_item {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(82, 81, 81, 0.3);
+      transition: 0.3s ease;
+      width: fit-content;
+
+      img {
+        width: 1.5rem;
+       
+        transition: 0.3s ease;
+      }
+
+      p {
+        margin-left: 1rem;
+        font-size: 1.3rem;
+        color: #727272;
+        transition: 0.3s ease;
+      }
+
+      &:hover {
+        
+        p { color: #e86e39; }
+      }
+    }
+  }
+
+  &_img {
+
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 25px  rgba(121, 120, 120, 0.25);
+
+    img {
+      width: 100%;
+    }
 
 
   }
-
-
-
-
-
-
+}
 
 
 
