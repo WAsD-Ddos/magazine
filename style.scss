@@ -367,6 +367,67 @@ body{
 }
 
 
+.products_advantages{
+    padding:50px 0;
+    background-color: rgb(255, 255, 255);
+  .products_body{
+    .products_body-title{
+
+    }
+    .products_items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(12.5rem,1fr));
+        gap: 1px;
+
+      .products_items-item{
+        border: 2px solid rgb(196, 194, 194);
+        position: relative;
+        display: flex; // Добавлено: делаем flex-контейнер
+        flex-direction: column; // Добавлено: вертикальное направление
+        height: 100%; // Добавлено: занимаем всю высоту
+
+        img{
+          max-width:70%;
+        }
+        .img_sale{
+          padding: 5px;
+          position: absolute;
+          max-width:5rem;
+          top:0;
+          right: 0;
+          img{
+          }
+        }
+
+        .products_item-text{
+          font-size: clamp(0.8rem, 1.5vw, 1rem); // Добавлено: адаптивный текст
+          padding: 0.5rem; // Добавлено: отступы для текста
+          line-height: 1.3; // Добавлено: межстрочный интервал
+          margin-bottom: auto; // Добавлено: выталкивает цену вниз
+        }
+
+        .products_item-price{
+          display: flex;
+          margin-top: auto; // Добавлено: прижимаем к низу
+          padding: 0.5rem; // Добавлено: отступы для цены
+          p{}
+        }
+      }
+    }
+   } 
+
+   .advantages_body{
+    .advantages_body-title{}
+    .advantages_items{
+      .advantages_items-item{}
+    }
+   }
+}
+
+
+
+
+
 
 
 
