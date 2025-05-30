@@ -603,3 +603,68 @@ body {
   font-size: clamp(0.8rem, 2vw, 1.5rem);
   line-height: 1.5;
 }
+.wrapper .podval {
+  padding: 30px 0;
+  background-color: #262625;
+}
+.wrapper .podval__net {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .podval__logo {
+  padding-top: 2rem;
+}
+.wrapper .podval__logo img {
+  max-width: 11rem;
+}
+.wrapper .podval__list {
+  padding-top: 2rem;
+}
+.wrapper .podval__list-body :last-child {
+  margin-bottom: 0;
+}
+.wrapper .podval__list-item {
+  margin-bottom: 1rem;
+}
+.wrapper .podval__list-item a {
+  color: rgb(183, 187, 191);
+  opacity: 0.9;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  padding-left: 1rem;
+}
+.wrapper .podval__list-item img {
+  max-width: 8px;
+  margin-top: 2px;
+}
+.wrapper .podval__menu {
+  padding-top: 2rem;
+}
+.wrapper .podval__menu-body :first-child {
+  color: rgb(247, 250, 253);
+  opacity: 1;
+  font-weight: 700;
+}
+.wrapper .podval__menu-body :first-child a {
+  padding-left: 0;
+}
+.wrapper .podval__menu-body :last-child {
+  margin-bottom: 0;
+}
+.wrapper .podval__menu-item {
+  margin-bottom: 1rem;
+}
+.wrapper .podval__menu-item a {
+  color: rgb(183, 187, 191);
+  opacity: 0.9;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  padding-left: 1rem;
+}
+.wrapper .podval__menu-item img {
+  max-width: 17px;
+}

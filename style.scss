@@ -520,6 +520,109 @@ body{
 
 
 
+.podval{
+    padding:30px 0;
+    background-color: #262625;
+  &__net{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+  }
+
+  &__logo{
+       padding-top: 2rem;
+    img{
+      max-width: 11rem;
+    }
+      
+  }
+
+  &__list{
+    
+    padding-top: 2rem;
+    &-body{
+    :last-child{
+       margin-bottom: 0;
+     }
+       
+    }
+
+    &-item{
+      margin-bottom: 1rem;
+     a{
+        color: rgb(183, 187, 191);
+        opacity: 0.9;
+        font-size: clamp(1rem, 1.2vw, 1.1rem);
+        padding-left: 1rem;
+     }
+
+     img{
+       max-width: 8px;
+       margin-top: 2px;
+     }
+
+    }
+
+  }
+
+  &__menu{
+     padding-top: 2rem;
+
+     &-body{
+       
+      :first-child{
+      color: rgb(247, 250, 253);
+      opacity: 1;
+      font-weight: 700;
+     a{
+      padding-left: 0;
+     }
+      
+     }
+
+    :last-child{
+       margin-bottom: 0;
+     }
+
+
+     }
+    
+     &-item{
+      margin-bottom: 1rem;
+     a{
+        color: rgb(183, 187, 191);
+        opacity: 0.9;
+        font-size: clamp(1rem, 1.2vw, 1.1rem);
+        padding-left: 1rem;
+     }
+
+     img{
+       max-width: 17px;
+       
+       
+     }
+
+
+
+     }
+
+  }
+
+  &__socialmedia{
+
+    &-body{
+
+    }
+
+    &-text{
+
+    }
+  }
+
+}
+
 
 
 
